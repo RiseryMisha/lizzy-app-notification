@@ -37,7 +37,8 @@
             btn.classList.add('opacity-80', 'scale-95');
 
             try {
-                const res = await fetch('/api/send', { method: 'POST' });
+                // Путь к серверной функции Netlify
+                const res = await fetch('/.netlify/functions/send', { method: 'POST' });
                 const data = await res.json();
 
                 if (data.success) {
