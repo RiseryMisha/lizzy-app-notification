@@ -12,7 +12,7 @@ exports.handler = async (event, context) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 chat_id: PARTNER_CHAT_ID,
-                text: "🚨 **Necesito ayuda con esta receta 🚨",
+                text: "🚨 **Quiero besarte, belleza. 🚨",
                 parse_mode: "Markdown"
             })
         });
